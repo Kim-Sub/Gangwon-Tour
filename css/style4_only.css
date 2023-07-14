@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
+
+h4{display: flex; padding: 40px 0 0px; align-items: center; color: #111; font-size: 36px; letter-spacing: -1px; font-weight: bold;}
+h4>img{height: 40px; margin-left: 9px;}
+.inner{width: 80%; }
+#mainview{position: relative;width: 1920px; height: 800px;}
+#mainview>h3{position: absolute;top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+#tabbox{width: 100%; height: 60px; background: white; display: flex; justify-content : space-between}
+
+#tabbox>.inner_right>a{padding: 0 20px; margin-left: 5px; color: #555; font-size: 14px; line-height: 60px; float: left;}
+#tabbox>.inner_left>a{height: 46px; line-height: 61px; padding: 0 20px; border-radius: 23px; color: #555; font-size: 18px;}
+#tabbox>.inner_left>.pointBox{background: linear-gradient(to right, #b100cf 0%,#f41216 100%); color: #fff; padding: 10px 20px;}
+
+
+/* contents 영역 */
+#contents{height: 1550px; background: #f5f3f3;border-top: 1px solid #ddd}
+#contents .inner .checkBox{width: 20%; height: 100%; float: left;}
+
+
+
+/* contents> checkbox 영역 */
+h4{font-size: 24px; padding-bottom: 10px; border-bottom: 2px solid #454545; font-weight: bold; color: #454545; margin-bottom: 20px;}
+#contents>.inner>.checkBox{padding: 40px; box-sizing: border-box; padding-left: 0px; padding-top: 22px; }
+#contents>.inner>.checkBox>div{display: flex ;width: 50%; height: 40px; float: left; align-items: center}
+#contents>.inner>.checkBox>div>input{width: 14px; height: 14px !important;}
+#contents>.inner>.checkBox>div>label{display: block; padding: 10px; color: #111; padding-left: 6px; font-size: 14px;}
+
+
+
+
+/* contemts>only> searchArea 박스 */
+.onlyBox>.searchArea{display: flex; justify-content : flex-end; margin-top: 30px; margin-right: 20px;}
+.onlyBox>.searchArea>select, input{display: block; height: 35px; width: 150px; padding-left: 10px; color: #535353; border:1px solid #c2c2c2; box-sizing: border-box; border-radius: 20px;margin-left: 5px;}
+.onlyBox>.searchArea>input{width: 350px;}
+.onlyBox>.searchArea>a{display: block; height: 35px; width: 60px; line-height: 35px; color: #fff; background: #303030; border-radius: 0; text-align: center;border-radius: 20px; font-size: 16px; margin-left: 5px;}
+.onlyBox>.searchArea>a:hover{background: linear-gradient(to right, #b100cf 0%,#f41216 100%); font-weight: bold; }
+.blank{color: #f5f3f3;}
+#areaSubmitBtn{display: block ;width: 100%; height: 40px; margin-top: 130px; color: #454545; border: 2px #454545 solid; border-radius: 20px; text-align: center; background: white; padding: 0px; margin: 0px ; }
+
+
+/* contents>only박스 */
+#contents>.inner>.onlyBox{width: 80%; height: 100%; float: right;}
+#contents>.inner>.onlyBox>ul{margin-left: 10px;}
+#contents>.inner>.onlyBox>ul>li{width: 365px; height: 290px; float: left; margin-right: 47px; margin-top: 40px; transition: .5s;}
+#contents>.inner>.onlyBox>ul>li:hover{transform: translate(0,-20px)}
+#contents .inner .onlyBox ul li:nth-child(3){margin-right: 0px;}
+#contents .inner .onlyBox ul li:nth-child(6){margin-right: 0px;}
+#contents .inner .onlyBox ul li:nth-child(9){margin-right: 0px;}
+#contents .inner .onlyBox ul li:nth-child(12){margin-right: 0px;}
+
+#contents .inner .onlyBox ul li a img{width: 365px; height: 200px;}
+#contents .inner .onlyBox ul li a span{display: block; margin-top: 5px; color: #aaa;font-size: 14px}
+#contents .inner .onlyBox ul li a strong{white-space: nowrap; overflow: hidden;
+text-overflow: ellipsis; display: block; margin-top: 2px; color: #111; font-size: 24px;letter-spacing: -2px; }
+
+/* contents > 페이지슬롯 */
+#pageslot .inner a{font-size: 15px; color: #454545}
+#pageslot .inner ul{justify-content: center; align-items: center; display: flex; }
+#pageslot .inner ul li{display: inline-block; background: white; min-width: 16px; height: 27px;padding: 0 2px; border: 1px solid  #d2d2d2; border-radius: 3px; line-height: 27px; vertical-align: middle; font-size: 14px; color: #454545; margin-bottom: 100px; margin-top: 50px; text-align: center; margin-right: 3px;}
+#pageslot .inner .slot{background: #f0f0f0}
+
+
+#footer{margin-top: -5px;}

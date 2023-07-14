@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>강원관광</title>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src='./js/commonScript.js' defer></script>
+	<link rel="stylesheet" href="./css/style.css">
+	
+	<link rel="원본 좌표" href="https://www.gangwon.to/gwtour"> 
+</head>
+
+<body>
+	<div id="wrap"> 
+		<nav id="top_menu_fixed">
+			<h1>
+				<a href="#" title="강원관광 메인페이지 바로가기"> <img src="./img/logo.png" alt="탑메뉴 로고"></a>
+			</h1>
+			<ul>
+				<li><a href="./index_folder/index_sub_story.html" title="NOW 강원">NOW 강원</a>
+					<ul>
+						<li><a href="./index_folder/index_sub_story.html" title="">이야기속강원</a></li>
+						<li><a href="./index_folder/index_sub_story2.html" title="">축제&amp;행사</a></li>
+						<li><a href="#" title="">쇼핑<mark>(미구현)</mark></a></li>
+					</ul>
+				</li>
+					<li><a href="./index_folder/index_sub_only.html" title="ONLY 강원">ONLY 강원</a>
+						<ul>
+							<li><a href="./index_folder/index_sub_only.html" title=""><dt>관광지</dt></a>
+								<dd><a href="./index_folder/index_sub_only.html" title="">자연</a></dd>
+								<dd><a href="./index_folder/index_sub_only.html" title="">문화&middot;역사 </a></dd>
+								<dd><a href="./index_folder/index_sub_only.html" title="">레저&middot;체험</a></dd>
+							</li>
+							<li><a href="./index_folder/index_sub_only2.html" title="">K한류</a></li>
+							<li><a href="#" title="">음식</a></li>
+							<li><a href="#" title="">테마여행</a></li>
+							<li><a href="#" title="">여행플래너</a></li>
+						</ul>
+					</li>
+				<li><a href="#" title="TOUR 강원">TOUR 강원</a></li>
+				<li><a href="#" title="여행안내">여행안내</a>
+					<ul>
+						<li><a href="#" title="">알림소식</a></li>
+						<li><a href="#" title="">관광안내소</a></li>
+						<li><a href="#" title="">사진공모전</a></li>
+						<li><a href="#" title="">가이드북&amp;지도</a></li>
+						<li><a href="#" title="">강원관광 e-book</a></li>
+						<li><a href="#" title="">시티투어</a></li>
+						<li><a href="#" title="">관광불편신고</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:" title="검색 버튼" class="search-button"><i class="fas fa-search"></i></a></li>  <!-- nav 검색버튼 -->
+				<li><a href="javascript:" title="사이드 메뉴 버튼"><i class="fas fa-bars"></i></a></li> <!-- nav 사이드메뉴 버튼 -->
+			</ul>
+			<div id="searchBg">
+				<form class="search-bx" method="" action="">
+					<fieldset>
+						<input type="hidden" name="siteCode" value="" />
+						<input type="search" id="keyword" name="searchKeyword" value="" placeholder="검색어를 입력해주세요">
+					</fieldset>
+					<i class="fas fa-search"></i>
+				</form>
+			</div>
+		</nav>
+
+
+
+		<section>
+			<!-- 메인뷰 -->
+			<div id="mainview">
+				<div class="contentBox">
+					<video autoplay muted>
+						<source src="./video/trainView.mp4" type="video/mp4">
+					</video>
+					<img src="./img/title01.jpg" alt="메인뷰01">
+				</div>
+			</div>
+
+
+			<!-- /* only 영역 */ -->
+			<div id="only">
+				<div class="inner">
+						<h2><img src="./img/title01.png" alt="only강원 이미지">
+						<a href='./index_folder/index_sub_only.html' alt="only강원 더보기 버튼">더보기</a></h2>
+							<div class="gallery">
+								<div class="slider-for">
+									<div><a href="#"><img src="./img/only_01.jpg" alt=""><span>일출명소<br><strong>동해 어디든 그곳이 해맞이 명소, 일출은 늘 언제나 강원도!</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_02.jpg" alt=""><span>별뷰 여행지<br><strong>캄캄한 어둠 속, 빛나는 별 하나...... 그 순간을 기억해</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_03.jpg" alt=""><span>익사이팅 체험코스<br><strong>짜릿한 경험. 차원이 다른 익사이팅을 자연속에서 즐기자</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_04.jpg" alt=""><span>힐링하기 좋은 청정 자연의 명소<br><strong>여행 그 자체로 힐링! 휴식이 필요하다면 이곳이 바로 쉼터</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_05.jpg" alt=""><span>연인과 함께하면 좋은 여행지<br><strong>함께 있는 추억 그 자체로 행복이 되는 연인들의 속삭임</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_06.jpg" alt=""><span>아이와 함께 여행<br><strong>강원도에는 아이들천국. 마음껏 놀고 신나게 공부하자</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_07.jpg" alt=""><span>반려견 동반 여행<br><strong>강원댕댕여지도를 펼쳐라! 반려견과 이젠 함께 다니자.</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_08.jpg" alt=""><span>나혼자여행<br><strong>혼자서도 좋아. 나혼자여행. 홀로족들을 위한 여행코스</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_09.jpg" alt=""><span>2박 3일 코스<br><strong>인심이 넘쳐나고 자연마저 너그러운 강원도에서의 2박 3일</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_10.jpg" alt=""><span>1박 2일 코스<br><strong>두근두근 설렘가득! 일출과 일몰은 강원도에서</strong></span></a></div>
+								</div>
+								<div class="slider-nav">
+									<div><a href="#"><img src="./img/only_01.jpg" alt=""><span>일출명소<br><strong>동해 어디든 그곳이 해맞이 명소, 일출은 늘 언제나 강원도!</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_02.jpg" alt=""><span>별뷰 여행지<br><strong>캄캄한 어둠 속, 빛나는 별 하나...... 그 순간을 기억해</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_03.jpg" alt=""><span>익사이팅 체험코스<br><strong>짜릿한 경험. 차원이 다른 익사이팅을 자연속에서 즐기자</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_04.jpg" alt=""><span>힐링하기 좋은 청정 자연의 명소<br><strong>여행 그 자체로 힐링! 휴식이 필요하다면 이곳이 바로 쉼터</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_05.jpg" alt=""><span>연인과 함께하면 좋은 여행지<br><strong>함께 있는 추억 그 자체로 행복이 되는 연인들의 속삭임</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_06.jpg" alt=""><span>아이와 함께 여행<br><strong>강원도에는 아이들천국. 마음껏 놀고 신나게 공부하자</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_07.jpg" alt=""><span>반려견 동반 여행<br><strong>강원댕댕여지도를 펼쳐라! 반려견과 이젠 함께 다니자.</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_08.jpg" alt=""><span>나혼자여행<br><strong>혼자서도 좋아. 나혼자여행. 홀로족들을 위한 여행코스</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_09.jpg" alt=""><span>2박 3일 코스<br><strong>인심이 넘쳐나고 자연마저 너그러운 강원도에서의 2박 3일</strong></span></a></div>
+									<div><a href="#"><img src="./img/only_10.jpg" alt=""><span>1박 2일 코스<br><strong>두근두근 설렘가득! 일출과 일몰은 강원도에서</strong></span></a></div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			<!-- /* movingtext 애니메이션 영역 */ -->
+			<div id="mtext"><p class="movingtext ir_pm">tour_gangwon 강릉투어 애니메이션 영역</p></div>
+
+
+
+
+			
+			<div id="like">
+				<div class="inner">
+					<img src="./img/title02.png" alt="like강원 이미지">
+					<div class="likeSection">
+						<a href=""><img src="./img/like (1).jpg" alt=""><span>곰배령&nbsp;│&nbsp;자연<p>활엽수가 이룬 극상의 원시림이라는 찬사가 잘 어울리는 천상의 화원. 자연을 벗삼아 산책하기 좋은 곳</p></span></img></a>
+						<a href=""><img src="./img/like (2).jpg" alt=""><span>고성 하늬라벤더팜&nbsp;│&nbsp;자연<p>이국적이고 아름다운 풍경. 보랏빛 언덕에서 느껴보는 색다른 여름의 추억</p></span></img></a>
+						<a href=""><img src="./img/like (3).jpg" alt=""><span>아야진해변&nbsp;│&nbsp;자연<p>주변경관이 수려하며 크고 작은 바위와 맑은 바다, 깨끗한 백사장이 어울려 가족단위 피서지로 적합한 곳</p></span></img></a>
+						<a href=""><img src="./img/like (4).jpg" alt=""><span>봉수대해변&nbsp;│&nbsp;자연<p>고성에서 가장 깨끗한 해수욕장. 볼거리 즐길거리 많은 여름철 인기 관광지</p></span></img></a>
+						<a href=""><img src="./img/like (5).jpg" alt=""><span>백섬경관해상데크&nbsp;│&nbsp;자연<p>거친 뒷장에 위치한 백섬(백암도)과 해안도로를 연결하는 해상데크. 동해바다와 해금강, 금구도, 거진항구의 아름다운 경치를 관람할 수 있는 곳</p></span></img></a>
+						<a href=""><img src="./img/like (6).jpg" alt=""><span>능파대 지질공원&nbsp;│&nbsp;자연<p>파도를 능가하는 돌섬. 능파대</p></span></img></a>
+
+					</div>
+					<div class="likeSide">
+						<div class="likeSide_Menu">
+							<div class="likeSide_Menubar">
+								<a href="" class="big">관광지</a>
+								<a href="" class="small">문화&middot;역사</a>
+								<a href="" class="small">레저&middot;체험</a>
+								<a href="" class="small">자연</a>
+								<a href="" class="big">K-한류</a>
+								<a href="" class="big">음식</a>
+							</div>
+						</div>
+					</div> 
+				</div> 
+			</div>
+			<script> // likeSide 우측 메뉴 :  페이지 스크롤 이동에 따라 따라오게끔
+				const likeSide = document.querySelector('.likeSide');
+				const startScrollY = 1720;
+				const endScrollY = 2320;
+			  
+				window.addEventListener('scroll', function() {
+				  const scrollY = window.scrollY;
+			  
+				  if (scrollY >= startScrollY && scrollY <= endScrollY) {
+					const scrolledTop = scrollY - startScrollY;
+					likeSide.style.top = scrolledTop + 'px';
+				  }
+				});
+			</script>
+
+
+
+			<!-- maptour 영역 -->
+			<!-- index_folder에 내부 프레임 요소 포함되어있습니다. -->
+			<!-- ★스크롤 이동시 하단 여백에 발생하는 것에 대하여 프레임 내부 html body값에 position:fixed 를 주는 것으로 해결하였다. -->
+			<section class="maptour_frameSection">
+				<iframe class="maptour_frame" src="./index_folder/maptour_frame1.html" frameborder="0" width="1920px" height="700px"  name="maptour_frame" seamless></iframe>
+			</section>
+
+
+
+
+			<!-- festival 영역 -->
+			<div id="festival">
+				<div class="inner">
+					<img src="./img/title03.png" alt="festival강원 이미지">
+					<div id="festival-slide">
+						<ul>
+							<li><a href=""><img src="./img/sub1_2/festival_09.jpg" alt=""><strong>태백산 눈축제</strong> <span>기간│&nbsp;2023-01-01 ~ 2023-01-31  <br>
+								장소│&nbsp;태백산 국립공원, 황지연못</span></a></li>
+							<li><a href=""><img src="./img/sub1_2/festival_10.jpg" alt=""><strong>동해 해맞이 행사</strong> <span>기간│&nbsp;2023-01-01 ~ 2023-01-01  <br>
+								장소│&nbsp;망상&middot;추암 해변, 논골담길(바람의 언덕)일원</span></a></li>
+							<li><a href=""><img src="./img/sub1_2/festival_11.jpg" alt=""><strong>양구 국토정중앙 달맞이축제</strong><span>기간│&nbsp;2023-02-05 ~ 2023-02-05 <br>
+								장소│&nbsp;서천변 레포츠공원</span> </a></li>
+							<li><a href=""><img src="./img/sub1_2/festival_12.jpg" alt=""><strong>정선 동강할미꽃축제</strong> <span>기간│&nbsp;2023-03-31 ~ 2023-04-02 <br>
+								장소│&nbsp;동강생태체험전시관, 동강할미꽃 거리 일원</span></a></li>
+							<li><a href=""><img src="./img/sub1_2/festival_13.jpg" alt=""><strong>평창 국제평화 영화제</strong> <span>기간│&nbsp;2022-06-23 ~ 2022-06-28  <br>
+								장소│&nbsp;평창군 대관령면 횡계리</span></a></li>
+							<li><a href=""><img src="./img/sub1_2/festival_14.jpg" alt=""><strong>영월 단종문화제</strong><span>기간│&nbsp;2022-04-29 ~ 2022-05-01  <br>
+								장소│&nbsp;세계유산 장릉 외 2개소</span> </a></li>
+							<li><a href=""><img src="./img/sub1_2/festival_15.jpg" alt=""><strong>횡성한우축제</strong> <span>기간│&nbsp;2022-09-30 ~ 2022-10-04  <br>
+								장소│&nbsp;횡성종합운동장 일원</span></a></li>
+							<li><a href=""><img src="./img/sub1_2/festival_16.jpg" alt=""><strong>삼척 해맞이축제</strong> <span>기간│&nbsp;2023-01-01 ~ 2023-01-01  <br>
+								장소│&nbsp;소망의탑 외 9개소</span></a></li>
+						</ul>
+					</div>
+					<script>
+						const slideBanner=$('#festival-slide ul');
+						const slideList=$('#festival-slide ul li');
+
+						let slideWidth=slideList.width();
+						let setIntervalId;
+						bannerSlides()
+						function bannerSlides(){
+							setIntervalId=setInterval(() =>{
+							slideBanner.stop().animate({left:-(slideWidth+50)},500, function(){
+							$('#festival-slide ul li:first').insertAfter('#festival-slide ul li:last');
+							slideBanner.css({left:0})
+								})
+							}, 3000)
+						}
+					</script>
+				</div>
+			</div>
+			<div id="giftgoods"> <!-- 모두에게 강원을 선물하세요 -->
+				<button type="button" class="gift-left"></button>
+				<button type="button" class="gift-right"></button>
+				<div class="inner">
+					<div id="gift_side1">
+						<h2><img src="./img/title04.png" alt="gift강원 이미지">
+						<a href="#" alt="강원더몰 바로가기 버튼">강원더몰 바로가기</a></h2>
+						</h2>
+					</div>
+					<div id="gift_side2">
+						<ul>
+							<li><a href="javascript:"><img src="./img/present_01.jpg" alt="선물이미지01"><span>강릉명품커피방 가베만쥬</span></a></li>
+							<li><a href="javascript:"><img src="./img/present_02.jpg" alt="선물이미지02"><span>남녀노소 누구나 불끈불끈 장어</span></a></li>
+							<li><a href="javascript:"><img src="./img/present_03.jpg" alt="선물이미지03"><span>밥도둑 술도둑 마약제육</span></a></li>
+							<li><a href="javascript:"><img src="./img/present_04.jpg" alt="선물이미지04"><span>[무료배송] 봄내춘천 닭갈비</span></a></li>
+							<li><a href="javascript:"><img src="./img/present_05.jpg" alt="선물이미지05"><span>채성옥 태백 열무김치 3kg,5kg,10kg</span></a></li>
+							<li><a href="javascript:"><img src="./img/present_06.jpg" alt="선물이미지06"><span>철원 오대쌀 플레이크 오대뮤즐리 300g x 2개</span></a></li>
+							<li><a href="javascript:"><img src="./img/present_07.jpg" alt="선물이미지07"><span>유기농으로 재배해 맛과 향이 진한 유기농 오대산 명이나물</span></a></li>
+							<li><a href="javascript:"><img src="./img/present_08.jpg" alt="선물이미지08"><span>[근덕농협] 청정 삼척의 곤드레 생체 4kg</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<script>
+				const slideBanner2 = $('#gift_side2>ul');
+				const slideList2 = $('#gift_side2>ul>li');
+				const slideWidth2 = slideList2.width();
+				let currentSlideIndex = 0;
+				
+				function moveToNextSlide() {
+				  if (slideBanner2.is(':animated')) {
+					return;
+				  }
+				
+				  currentSlideIndex++;
+				  if (currentSlideIndex >= slideList2.length) {
+					currentSlideIndex = 0;
+				  }
+				
+				  slideBanner2.animate({ left: -(slideWidth2 + 22) }, 500)
+					.promise()
+					.done(function() {
+					  $('#gift_side2>ul>li:first').insertAfter('#gift_side2>ul>li:last');
+					  slideBanner2.css({ left: 0 });
+					});
+				}
+				
+				function moveToPreviousSlide() {
+				  if (slideBanner2.is(':animated')) {
+					return;
+				  }
+				
+				  currentSlideIndex--;
+				  if (currentSlideIndex < 0) {
+					currentSlideIndex = slideList2.length - 1;
+				  }
+				
+				  $('#gift_side2>ul>li:last').insertBefore('#gift_side2>ul>li:first');
+				  slideBanner2.css({ left: -(slideWidth2 + 22) });
+				  slideBanner2.animate({ left: 0 }, 500);
+				}
+				
+				$('.gift-left').click(moveToPreviousSlide);
+				$('.gift-right').click(moveToNextSlide);
+				</script>
+
+			<div id="memo">
+				<div class="inner">
+					<div id="side1">
+						<h2>알림소식</h2>
+						<ul>
+							<li><a href="#" title="알림소식1">한국도로공사 강원본부와 함께하는 강원축제여행 </a><span>2023.03.18</span></li>
+							<li><a href="#" title="알림소식2">강릉 대형 산불로 인해 어려움을 겪고 계신 모든 분들을 응원합니다. </a><span>2023.03.26</span></li>
+							<li><a href="#" title="알림소식3">강원 샷건 트레킹 오픈 </a><span>2023.04.19</span></li>
+						</ul>
+					</div>
+					<div id="side2">
+						<input type="radio" name="slide" id="slide01" checked>
+						<input type="radio" name="slide" id="slide02">
+						<input type="radio" name="slide" id="slide03">
+
+						<div class="slideWrap">
+							<ul class="slideList">
+								<li>
+									<a href="javascript:">
+										<label for="slide03" class="left"></label>
+										<img src="./img/notice_01.jpg" alt="">
+										<label for="slide02" class="right"></label>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:">
+										<label for="slide01" class="left"></label>
+										<img src="./img/notice_02.jpg" alt="">
+										<label for="slide03" class="right"></label>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:">
+										<label for="slide02" class="left"></label>
+										<img src="./img/notice_03.jpg" alt="">
+										<label for="slide01" class="right"></label>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="sns">
+				<div class="inner">
+					<div id="sns_side1">
+						<h2>강원관광 SNS</h2>
+						<ul>
+							<li><a class="insta" href="#"><span>인스타그램</span> </a></li>
+							<li><a class="facebook" href="#"><span>페이스북</span> </a></li>
+							<li><a class="blog" href="#"><span>네이버 블로그</span> </a></li>
+							<li><a class="youtube" href="#"><span>유튜브</span> </a></li>
+						</ul>
+					</div>
+					<div id="sns_side2">
+						<ul>
+							<li><a href="#"><img src="./img/sns_01.jpg" alt="SNS이미지1"></a></li>
+							<li><a href="#"><img src="./img/sns_02.jpg" alt="SNS이미지2"></a></li>
+							<li><a href="#"><img src="./img/sns_03.jpg" alt="SNS이미지3"></a></li>
+							<li><a href="#"><img src="./img/sns_04.jpg" alt="SNS이미지4"></a></li>
+							<li><a href="#"><img src="./img/sns_05.jpg" alt="SNS이미지5"></a></li>
+							<li><a href="#"><img src="./img/sns_06.jpg" alt="SNS이미지6"></a></li>
+							<li><a href="#"><img src="./img/sns_07.jpg" alt="SNS이미지7"></a></li>
+						</ul>
+					</div>
+					<script>
+						const slideBanner3=$('#sns_side2 ul');
+						const slideList3=$('#sns_side2 ul li');
+
+						let slideWidth3=slideList3.width();
+						let setIntervalId2;
+						bannerSlides()
+						function bannerSlides(){
+							setIntervalId2=setInterval(() =>{
+							slideBanner3.stop().animate({left:-(slideWidth3)},500, function(){
+							$('#sns_side2 ul li:first').insertAfter('#sns_side2 ul li:last');
+							slideBanner3.css({left:0})
+								})
+							}, 2000)
+						}
+					</script>
+				</div>
+			</div>
+			<div id="welcome">
+				<img src="./img/welcome.png" alt="welcome 환영 이미지">
+			</div>
+		</section>
+
+		<footer id="footer">
+			<div class="inner">
+				<h1>
+					<a href="#"><img src="./img/logo.png" alt="강원관광 로고">
+					</a>
+				</h1>
+				<div class="footerLink">
+					<ul>
+						<li><a href="">개인정보처리방침</a><span class="ir_pm">구분바</span></li>
+						<li><a href="">영상정보처리기기관리방침</a><span class="ir_pm">구분바</span></li>
+						<li><a href="">저작권보호</a><span></span></li>
+						<li><a href="">유관기관 사이트</a>
+							<ul>
+								<li><a href="">강원도청</a></li>
+								<li><a href="">강원도관광재단</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<address>
+				<li>(24266) 강원도 춘천시 중앙로 1 (봉의동)</li> 
+				<li>ⓒ Gangwon-do    All Rights Reserved</li>
+			</address>
+		</footer>
+
+	</div>
+
+<script>
+	 function sliderSet(slickfor,slicknav){
+		slickfor.slick({
+			infinite: true,
+			speed: 300,
+			fade: true,
+			cssEase: 'linear',
+			autoplay: true,
+			autoplaySpeed: 1500
+		});
+		slicknav.slick({
+			infinite: true,
+			speed: 300,
+			fade: true,
+			cssEase: 'linear',
+			autoplay: true,
+			autoplaySpeed: 1500,
+			initialSlide: 6,
+		});
+	 }
+
+	 $('.gallery').each(function(i,el){
+		i+=1; 
+		var slickfor = $(el).find('.slider-for').addClass('for'+ i)
+		var slicknav = $(el).find('.slider-nav').addClass('nav'+ i)
+		sliderSet(slickfor,slicknav);
+	})
+</script>
+<!-- 상단으로 가기 버튼 -->
+	<a href="#"><div id="top-btn"></div></a>
+	<script>
+		window.onscroll = function () {
+    let windowTop = window.scrollY;
+
+    if (windowTop >= 800) {
+        document.querySelector('#top-btn').style.display='block'
+    } else {
+        document.querySelector('#top-btn').style.display='none'
+    }
+}
+	</script>
+</body>
+</html>

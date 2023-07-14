@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>관광지</title>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script src="../js/commonScript.js" defer></script>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style4_only.css">
+	<link rel="원본 좌표" href="https://www.gangwon.to/gwtour"> 
+</head>
+ 
+<body>
+	<nav id="top_menu_fixed">
+		<h1>
+			<a href="../index.html" title="강원관광 메인페이지 바로가기"> <img src="../img/logo.png" alt="탑메뉴 로고"></a>
+		</h1>
+		<ul>
+			<li><a href="../index_folder/index_sub_story.html" title="NOW 강원">NOW 강원</a>
+				<ul>
+					<li><a href="../index_folder/index_sub_story.html" title="">이야기속강원</a></li>
+					<li><a href="../index_folder/index_sub_story2.html" title="">축제&amp;행사</a></li>
+					<li><a href="#" title="">쇼핑<mark>(미구현)</mark></a></li>
+				</ul>
+			</li>
+				<li><a href="../index_folder/index_sub_only.html" title="ONLY 강원">ONLY 강원</a>
+					<ul>
+						<li><a href="../index_folder/index_sub_only.html" title=""><dt>관광지</dt></a>
+							<dd><a href="../index_folder/index_sub_only.html" title="">자연</a></dd>
+							<dd><a href="../index_folder/index_sub_only.html" title="">문화&middot;역사 </a></dd>
+							<dd><a href="../index_folder/index_sub_only.html" title="">레저&middot;체험</a></dd>
+						</li>
+						<li><a href="../index_folder/index_sub_only2.html" title="">K한류</a></li>
+						<li><a href="#" title="">음식</a></li>
+						<li><a href="#" title="">테마여행</a></li>
+						<li><a href="#" title="">여행플래너</a></li>
+					</ul>
+				</li>
+			<li><a href="#" title="TOUR 강원">TOUR 강원</a></li>
+			<li><a href="#" title="여행안내">여행안내</a>
+				<ul>
+					<li><a href="#" title="">알림소식</a></li>
+					<li><a href="#" title="">관광안내소</a></li>
+					<li><a href="#" title="">사진공모전</a></li>
+					<li><a href="#" title="">가이드북&amp;지도</a></li>
+					<li><a href="#" title="">강원관광 e-book</a></li>
+					<li><a href="#" title="">시티투어</a></li>
+					<li><a href="#" title="">관광불편신고</a></li>
+				</ul>
+			</li>
+			<li><a href="javascript:" title="검색 버튼" class="search-button"><i class="fas fa-search"></i></a></li>  <!-- nav 검색버튼 -->
+			<li><a href="javascript:" title="사이드 메뉴 버튼"><i class="fas fa-bars"></i></a></li> <!-- nav 사이드메뉴 버튼 -->
+		</ul>
+		<div id="searchBg">
+			<form class="search-bx" method="" action="">
+				<fieldset>
+					<input type="hidden" name="siteCode" value="" />
+					<input type="search" id="keyword" name="searchKeyword" value="" placeholder="검색어를 입력해주세요">
+				</fieldset>
+				<i class="fas fa-search"></i>
+			</form>
+		</div>
+	</nav>
+	<section>
+		<div id="mainview">
+			<img src="../img/sub2_1/sub_visual02.jpg" alt="메인뷰01">
+			<h3>관광지</h3>
+		</div>
+
+		<!-- 탭박스 영역 -->
+        <div class="inner">
+    		<div id="tabbox">
+                    <div class="inner_left">
+                        <a href="" class="pointBox">전체</a>
+                        <a href="">자연</a>
+                        <a href="">문화&middot;역사</a>
+                        <a href="">레저&middot;체험</a>
+                    </div>
+        			<div class="inner_right">
+        				<a href="#">&nbsp;HOME &nbsp; ></a>
+        				<a href="#">&nbsp;ONLY 강원 &nbsp; ></a>
+        				<a href="#"><span style="font-weight: bold;">관광지</span> &nbsp; </a>
+        			</div>
+    		</div>
+        </div>
+<!-- ← 여기까지 공통영역 입니다 -->
+
+		<!-- 컨텐츠영역 -->
+    <div id="contents">
+        <div class="inner">
+            <div class="checkBox">
+				<h4>지역</h4>
+				<div><input type="checkbox" id="allArea"><label for="allArea">전체</label></input></div>
+				<div><input type="checkbox" id="area01"><label for="area01">춘천시</label></input></div>
+				<div><input type="checkbox" id="area02"><label for="area02">원주시</label></input></div>
+				<div><input type="checkbox" id="area03"><label for="area03">강릉시</label></input></div>
+				<div><input type="checkbox" id="area04"><label for="area04">동해시</label></input></div>
+				<div><input type="checkbox" id="area05"><label for="area05">태백시</label></input></div>
+				<div><input type="checkbox" id="area06"><label for="area06">속초시</label></input></div>
+				<div><input type="checkbox" id="area07"><label for="area07">삼척시</label></input></div>
+				<div><input type="checkbox" id="area08"><label for="area08">홍천군</label></input></div>
+				<div><input type="checkbox" id="area09"><label for="area09">횡성군</label></input></div>
+				<div><input type="checkbox" id="area10"><label for="area10">영월군</label></input></div>
+				<div><input type="checkbox" id="area11"><label for="area11">평창군</label></input></div>
+				<div><input type="checkbox" id="area12"><label for="area12">정선군</label></input></div>
+				<div><input type="checkbox" id="area13"><label for="area13">철월군</label></input></div>
+				<div><input type="checkbox" id="area14"><label for="area14">화천군</label></input></div>
+				<div><input type="checkbox" id="area15"><label for="area15">양구군</label></input></div>
+				<div><input type="checkbox" id="area16"><label for="area16">인제군</label></input></div>
+				<div><input type="checkbox" id="area17"><label for="area17">고성군</label></input></div>
+				<div class="blank">지역별 검색기능 버튼</div>
+				<input type="submit" value="검색" id="areaSubmitBtn"></input>
+			</div>
+
+<!-- 작업중 --> <!-- 좌측 체크박스 -->
+            <div class="onlyBox">
+				<div class="searchArea">
+					<select name="" id="">
+						<option value="전체">전체</option>
+						<option value="최신순">최신순</option>
+						<option value="인기순">인기순</option>
+					</select>
+					<select name="" id="">
+						<option value="제목">제목</option>
+						<option value="내용">내용</option>
+					</select>
+					<input type="box" placeholder="검색어를 입력해주세요." name=""></input>
+					<a href="">검색</a>
+				</div>
+				<ul>
+					<li><a href=""> <img src="../img/sub2_1/onlyspot_01.jpg" alt=""><span>영월군</span> <strong>펫힐링 달빛동물원</strong></a></li>
+					<li><a href=""> <img src="../img/sub2_1/onlyspot_02.jpg" alt=""><span>영월군</span> <strong>연당원</strong></a></li>
+					<li><a href=""> <img src="../img/sub2_1/onlyspot_03.jpg" alt=""><span>영월군</span> <strong>라디오스타박물관</strong></a></li>
+					<li><a href=""> <img src="../img/sub2_1/onlyspot_04.jpg" alt=""><span>영월군</span> <strong>탄광문화촌</strong></a></li>
+					<li><a href=""> <img src="../img/sub2_1/onlyspot_05.jpg" alt=""><span>영월군</span> <strong>김삿갓문학관</strong></a></li>
+					<li><a href=""> <img src="../img/sub2_1/onlyspot_06.jpg" alt=""><span>평창군</span> <strong>2018 평창 동계올림픽대회 및 동계패럴림픽대회 기념관</strong></a></li>
+					<li><a href=""> <img src="../img/sub2_1/onlyspot_07.jpg" alt=""><span>평창군</span> <strong>알펜시아 스키점프센터</strong></a></li>
+					<li><a href=""> <img src="../img/sub2_1/onlyspot_08.jpg" alt=""><span>평창군</span> <strong>대관령 국민의 숲</strong></a></li>
+					<li><a href=""> <img src="../img/sub2_1/onlyspot_09.jpg" alt=""><span>평창군</span> <strong>월정사 전나무숲길</strong></a></li>
+					<li><a href=""> <img src="../img/sub2_1/onlyspot_10.jpg" alt=""><span>평창군</span> <strong>월정사 성보박물관</strong></a></li>
+					<li><a href=""> <img src="../img/sub2_1/onlyspot_11.jpg" alt=""><span>평창군</span> <strong>평창 밀브릿지</strong></a></li>
+					<li><a href=""> <img src="../img/sub2_1/onlyspot_12.jpg" alt=""><span>평창군</span> <strong>봉평 전통시장</strong></a></li>
+				</ul>
+				<div id="pageslot">
+					<div class="inner">
+						<ul>
+							<li class="slot"><a href="">&lt;</a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+							<li><a href="">6</a></li>
+							<li><a href="">7</a></li>
+							<li><a href="">8</a></li>
+							<li><a href="">9</a></li>
+							<li><a href="">10</a></li>
+							<li class="slot"><a href="">&gt;</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+        </div>
+    </div>
+
+    <img id="img_download" src="../img/sub2_1/download.jpg" alt="관광지 등록 양식 다운로드">
+		
+
+
+
+<!-- ← 여기까지 공통영역 입니다 -->		
+		<footer id="footer">
+			<div class="inner">
+				<h1>
+					<a href="#"><img src="../img/logo.png" alt="강원관광 로고">
+					</a>
+				</h1>
+				<div class="footerLink">
+					<ul>
+						<li><a href="">개인정보처리방침</a><span class="ir_pm">구분바</span></li>
+						<li><a href="">영상정보처리기기관리방침</a><span class="ir_pm">구분바</span></li>
+						<li><a href="">저작권보호</a><span></span></li>
+						<li><a href="">유관기관 사이트</a>
+							<ul>
+								<li><a href="">강원도청</a></li>
+								<li><a href="">강원도관광재단</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<address>
+				<li>(24266) 강원도 춘천시 중앙로 1 (봉의동)</li> 
+				<li>ⓒ Gangwon-do    All Rights Reserved</li>
+			</address>
+		</footer>
+
+		</div>
+
+
+</body>

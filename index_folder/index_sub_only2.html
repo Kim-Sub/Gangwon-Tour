@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>축제&행사</title>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script src="../js/commonScript.js" defer></script>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/style5_only.css">
+	<link rel="원본 좌표" href="https://www.gangwon.to/gwtour"> 
+	
+</head>
+ 
+<body>
+	<nav id="top_menu_fixed">
+		<h1>
+			<a href="../index.html" title="강원관광 메인페이지 바로가기"> <img src="../img/logo.png" alt="탑메뉴 로고"></a>
+		</h1>
+		<ul>
+			<li><a href="../index_folder/index_sub_story.html" title="NOW 강원">NOW 강원</a>
+				<ul>
+					<li><a href="../index_folder/index_sub_story.html" title="">이야기속강원</a></li>
+					<li><a href="../index_folder/index_sub_story2.html" title="">축제&amp;행사</a></li>
+					<li><a href="#" title="">쇼핑<mark>(미구현)</mark></a></li>
+				</ul>
+			</li>
+				<li><a href="../index_folder/index_sub_only.html" title="ONLY 강원">ONLY 강원</a>
+					<ul>
+						<li><a href="../index_folder/index_sub_only.html" title=""><dt>관광지</dt></a>
+							<dd><a href="../index_folder/index_sub_only.html" title="">자연</a></dd>
+							<dd><a href="../index_folder/index_sub_only.html" title="">문화&middot;역사 </a></dd>
+							<dd><a href="../index_folder/index_sub_only.html" title="">레저&middot;체험</a></dd>
+						</li>
+						<li><a href="../index_folder/index_sub_only2.html" title="">K한류</a></li>
+						<li><a href="#" title="">음식</a></li>
+						<li><a href="#" title="">테마여행</a></li>
+						<li><a href="#" title="">여행플래너</a></li>
+					</ul>
+				</li>
+			<li><a href="#" title="TOUR 강원">TOUR 강원</a></li>
+			<li><a href="#" title="여행안내">여행안내</a>
+				<ul>
+					<li><a href="#" title="">알림소식</a></li>
+					<li><a href="#" title="">관광안내소</a></li>
+					<li><a href="#" title="">사진공모전</a></li>
+					<li><a href="#" title="">가이드북&amp;지도</a></li>
+					<li><a href="#" title="">강원관광 e-book</a></li>
+					<li><a href="#" title="">시티투어</a></li>
+					<li><a href="#" title="">관광불편신고</a></li>
+				</ul>
+			</li>
+			<li><a href="javascript:" title="검색 버튼" class="search-button"><i class="fas fa-search"></i></a></li>  <!-- nav 검색버튼 -->
+			<li><a href="javascript:" title="사이드 메뉴 버튼"><i class="fas fa-bars"></i></a></li> <!-- nav 사이드메뉴 버튼 -->
+		</ul>
+		<div id="searchBg">
+			<form class="search-bx" method="" action="">
+				<fieldset>
+					<input type="hidden" name="siteCode" value="" />
+					<input type="search" id="keyword" name="searchKeyword" value="" placeholder="검색어를 입력해주세요">
+				</fieldset>
+				<i class="fas fa-search"></i>
+			</form>
+		</div>
+	</nav>
+	<section>
+		<div id="mainview">
+			<video src="../img/sub2_2/wave.mp4" autoplay muted loop alt="메인뷰"></video>
+			<h3>K-한류</h3>
+		</div>
+
+		<!-- 탭박스 영역 -->
+        <div class="inner">
+    		<div id="tabbox">
+
+        			<div class="inner_right">
+        				<a href="#">&nbsp;HOME &nbsp; ></a>
+        				<a href="#">&nbsp;ONLY 강원 &nbsp; ></a>
+        				<a href="#"><span style="font-weight: bold;">K-한류</span> &nbsp; </a>
+        			</div>
+    		</div>
+        </div>
+<!-- ← 여기까지 공통영역 입니다 -->
+		<!-- 컨텐츠영역 -->
+		<div id="film-spot">
+			<img src="../img/sub2_2/gw_filmingsite_titleimg_ko.png" alt="영화촬영지 안내 이미지">
+		</div>
+
+		<div id="map-map">
+			<div class="inner">
+				<div class="mapbox">
+					<div class="pinbox">
+						<img id="img" src="../img/sub2_2/map_chuncheon.png" alt="">
+						<a class="v01-active" onclick="pinboxClick1()">춘천</a>
+						<a class="v02" onclick="pinboxClick2()">강릉</a>
+						<a class="v03" onclick="pinboxClick3()">고성</a>
+						<a class="v04" onclick="pinboxClick4()">횡성</a>
+						<a class="v05" onclick="pinboxClick5()">인제</a>
+						<a class="v06" onclick="pinboxClick6()">정선</a>
+						<a class="v07" onclick="pinboxClick7()">평창</a>
+						<a class="v08" onclick="pinboxClick8()">삼척</a>
+						<a class="v09" onclick="pinboxClick9()">속초</a>
+						<a class="v10" onclick="pinboxClick10()">태백</a>
+						<a class="v11" onclick="pinboxClick11()">원주</a>
+						<a class="v12" onclick="pinboxClick12()">양양</a>
+						<a class="v13" onclick="pinboxClick13()">영월</a>
+						<span class="v14">철원</span>
+						<span class="v15">화천</span>
+						<span class="v16">양구</span>
+						<span class="v17">홍천</span>
+						<span class="v18">동해</span>
+					</div>
+				</div>
+				<!-- ★지도 사진 전환 스크립트 -->
+				<script> 
+	 /*★ a하이퍼링크 기능 비활성화 */
+	 document.querySelector(".disableLink").removeAttribute('href');
+	 /*★ ↓클릭시 사진 좌표 변경 함수 */
+	 function pinboxClick1() {document.getElementById("img").src = "../img/sub2_2/map_chuncheon.png";}
+	 function pinboxClick2() {document.getElementById("img").src = "../img/sub2_2/map_gangneung.png";}
+	 function pinboxClick3() {document.getElementById("img").src = "../img/sub2_2/map_goseong.png";}
+	 function pinboxClick4() {document.getElementById("img").src = "../img/sub2_2/map_hoengseong.png";}
+	 function pinboxClick5() {document.getElementById("img").src = "../img/sub2_2/map_inje.png";}
+	 function pinboxClick6() {document.getElementById("img").src = "../img/sub2_2/map_jeongseon.png";}
+	 function pinboxClick7() {document.getElementById("img").src = "../img/sub2_2/map_pyeongchang.png";}
+	 function pinboxClick8() {document.getElementById("img").src = "../img/sub2_2/map_samcheok.png";}
+	 function pinboxClick9() {document.getElementById("img").src = "../img/sub2_2/map_sokcho.png";}
+	 function pinboxClick10() {document.getElementById("img").src = "../img/sub2_2/map_taebaek.png";}
+	 function pinboxClick11() {document.getElementById("img").src = "../img/sub2_2/map_wonju.png";}
+	 function pinboxClick12() {document.getElementById("img").src = "../img/sub2_2/map_yangyang.png";}
+	 function pinboxClick13() {document.getElementById("img").src = "../img/sub2_2/map_yeongwol.png";}
+	
+/* 토글과 클래스로 after 애니메이션 효과 따라가기 만들기 */
+				</script>
+
+				<h4 class="viewbox">
+					<div><img src="../img/sub2_2/mv_11.png" height="" alt=""></img>
+						<div>
+							<h4>제이드가든</h4>
+							<ul>
+								<li><span>콘텐츠명</span><p>BTS 촬영지</p></li>
+								<li><span>주소</span><p>강원 춘천시 남산면 햇골길 80 제이드가든수목원</p></li>
+							</ul>
+						</div>
+					</div>
+					<div><img src="../img/sub2_2/mv_12.png" height="" alt=""></img>
+						<div>
+							<h4>강촌폐역</h4>
+							<ul>
+								<li><span>콘텐츠명</span><p>BTS 촬영지</p></li>
+								<li><span>주소</span><p>강원 춘천시 남산면 강촌로 34</p></li>
+							</ul>
+						</div>
+					</div>
+					<div><img src="../img/sub2_2/mv_13.png" height="" alt=""></img>
+						<div>
+							<h4>용화산</h4>
+							<ul>
+								<li><span>콘텐츠명</span><p>BTS 촬영지</p></li>
+								<li><span>주소</span><p>강원도 춘천시 사북면 사여골길 294</p></li>
+							</ul>
+						</div>
+					</div>
+					<div><img src="../img/sub2_2/mv_14.png" height="" alt=""></img>
+						<div>
+							<h4>해피초원목장</h4>
+							<ul>
+								<li><span>콘텐츠명</span><p>BTS 촬영지</p></li>
+								<li><span>주소</span><p>강원 춘천시 사북면 춘화로 330-48 해피초원목장</p></li>
+							</ul>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		<div id="movie-spot">
+			<div class="ms-title">
+				<h4>
+					<p>영화에 나왔던 그곳!</p>
+					스크린 속 촬영지
+				</h4>
+				<span>
+					구석구석 어디를 둘러봐도 다 촬영지 같잖아? <br>
+					영화 속 주인공들이 금방이라도 튀언올 것 같은 <br>
+					그 공간. 그 자리
+				</span>
+				<p>
+					<a href="#" class="prev-btn">이전</a>
+					<a href="#" class="next-btn">다음</a>
+				</p>
+			</div>
+			<div class="ms-slider">
+				<!-- a전체가 프레임 하나 입니다 -->
+				<!-- 망고js 의 자동슬라이더를 참고합니다 -->
+				<div id="frame1">
+					<a href=""><img src="../img/sub2_2/movie_01.png" alt="영화촬영지 이미지"><div><p><strong>왕곡마을</strong><span>고성군<em> - 동주 -</em></span></p><i><img src="../img/sub2_2/miniicon_movie.png" alt=""></i></div></a>
+					<a href=""><img src="../img/sub2_2/movie_02.png" alt="영화촬영지 이미지"><div><p><strong>가진항</strong><span>고성군<em> - 군함도 -</em></span></p><i><img src="../img/sub2_2/miniicon_movie.png" alt=""></i></div></a>
+					<a href=""><img src="../img/sub2_2/movie_03.png" alt="영화촬영지 이미지"><div><p><strong>웰컴투동막골</strong><span>평창군<em> - 웰컴투동막골 -</em></span></p><i><img src="../img/sub2_2/miniicon_movie.png" alt=""></i></div></a>
+					<a href=""><img src="../img/sub2_2/movie_04.png" alt="영화촬영지 이미지"><div><p><strong>라디오스타박물관</strong><span>영월군<em> - 라디오스타 -</em></span></p><i><img src="../img/sub2_2/miniicon_movie.png" alt=""></i></div></a>
+					<a href=""><img src="../img/sub2_2/movie_05.png" alt="영화촬영지 이미지"><div><p><strong>무건리 이끼폭포</strong><span>삼척시<em> - 옥자 -</em></span></p><i><img src="../img/sub2_2/miniicon_movie.png" alt=""></i></div></a>
+					<a href=""><img src="../img/sub2_2/movie_06.png" alt="영화촬영지 이미지"><div><p><strong>죽서루</strong><span>삼척시<em> - 외출 -</em></span></p><i><img src="../img/sub2_2/miniicon_movie.png" alt=""></i></div></a>
+					<a href=""><img src="../img/sub2_2/movie_07.png" alt="영화촬영지 이미지"><div><p><strong>대나무숲/맹방해수욕장</strong><span>삼척시<em> - 봄날은 간다 -</em></span></p><i><img src="../img/sub2_2/miniicon_movie.png" alt=""></i></div></a>
+				</div>
+				<script>
+const slideBanner=$('.ms-slider #frame1');
+const slideList=$('.ms-slider #frame1 a');
+
+let slideWidth=slideList.width();
+let setIntervalId;
+bannerSlides()
+function bannerSlides(){
+    setIntervalId=setInterval(() =>{
+    slideBanner.stop().animate({left:-(slideWidth+50)},500, function(){
+    $('.ms-slider #frame1 a:first').insertAfter('.ms-slider #frame1 a:last');
+    slideBanner.css({left:0})
+        })
+    }, 3000)
+}
+				</script>
+			</div>
+		</div>
+		<div id="drama-spot">
+			<div class="ms-slider2">
+				<!-- a전체가 프레임 하나 입니다 -->
+				<!-- 망고js 의 자동슬라이더를 참고합니다 -->
+				<div id="frame2">
+					<a href=""><img src="../img/sub2_2/drama_01.png" alt="영화촬영지 이미지"><div><p><strong>태양의 후예 공원</strong><span>태백시<em> - 태양의후예 -</em></span></p><i><img src="../img/sub2_2/miniicon_drama.png" alt=""></i></div></a>
+					<a href=""><img src="../img/sub2_2/drama_02.png" alt="영화촬영지 이미지"><div><p><strong>주문진항</strong><span>강릉시<em> - 도깨비 -</em></span></p><i><img src="../img/sub2_2/miniicon_drama.png" alt=""></i></div></a>
+					<a href=""><img src="../img/sub2_2/drama_03.png" alt="영화촬영지 이미지"><div><p><strong>자작나무숲</strong><span>인제군<em> - 킹덤 -</em></span></p><i><img src="../img/sub2_2/miniicon_drama.png" alt=""></i></div></a>
+					<a href=""><img src="../img/sub2_2/drama_04.png" alt="영화촬영지 이미지"><div><p><strong>별마로천문대</strong><span>영월군<em> - 사랑의불시착 -</em></span></p><i><img src="../img/sub2_2/miniicon_drama.png" alt=""></i></div></a>
+				</div>
+			</div>
+			<div class="ms-title2">
+				<h4>
+					<p>앗! 드라마에서 본 곳이 바로 여기라고?</p>
+					TV 속 드라마 촬영지
+				</h4>
+				<span>
+					교통 편리하고 인프라가 중요한 로케이션 1순위<br>
+					인물들의 특별한 순간을 꼭 담고 싶을 때 <br>
+					강원을 찾을 수 밖에 없는 이유!
+				</span>
+				<p>
+					<a href="#" class="prev-btn">이전</a>
+					<a href="#" class="next-btn">다음</a>
+				</p>
+			</div>
+			<script>
+const slideBanner2=$('.ms-slider2 #frame2');
+const slideList2=$('.ms-slider2 #frame2 a');
+
+let slideWidth2=slideList2.width();
+let setIntervalId2;
+bannerSlides2()
+function bannerSlides2(){
+	setIntervalId2=setInterval(() =>{
+	slideBanner2.stop().animate({left:(slideWidth2+50)},500, function(){
+	$('.ms-slider2 #frame2 a:last').insertBefore('.ms-slider2 #frame2 a:first');
+	slideBanner2.css({left:0})
+		})
+	}, 3200)
+}
+			</script>
+		</div>
+	</div>
+ 
+
+
+<!-- ← 여기까지 공통영역 입니다 -->		
+		<footer id="footer">
+			<div class="inner">
+				<h1>
+					<a href="#"><img src="../img/logo.png" alt="강원관광 로고">
+					</a>
+				</h1>
+				<div class="footerLink">
+					<ul>
+						<li><a href="">개인정보처리방침</a><span class="ir_pm">구분바</span></li>
+						<li><a href="">영상정보처리기기관리방침</a><span class="ir_pm">구분바</span></li>
+						<li><a href="">저작권보호</a><span></span></li>
+						<li><a href="">유관기관 사이트</a>
+							<ul>
+								<li><a href="">강원도청</a></li>
+								<li><a href="">강원도관광재단</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<address>
+				<li>(24266) 강원도 춘천시 중앙로 1 (봉의동)</li> 
+				<li>ⓒ Gangwon-do    All Rights Reserved</li>
+			</address>
+		</footer>
+
+		</div>
+
+
+</body>

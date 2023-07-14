@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
+
+h4{display: flex; padding: 40px 0 0px; align-items: center; color: #111; font-size: 36px; letter-spacing: -1px; font-weight: bold;}
+h4>img{height: 40px; margin-left: 9px;}
+.inner{width: 80%; }
+#mainview{position: relative;width: 1920px; height: 800px;}
+#mainview>h3{position: absolute;top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#tabbox{width: 100%; height: 60px;border-bottom: 1px solid #ddd; background: white;}
+#tabbox a{padding: 0 20px; margin-left: 5px; color: #555; font-size: 14px; line-height: 60px; float: left;}
+#tabbox>.inner{padding-left: 1370px;}
+
+/* contents 영역 */
+#contents{background: #f5f3f3;}
+#contents .mainul li{width: 330px; height: 550px;float: left; transition: .5s; margin: 45px 65px 20px 0px;}
+#contents .mainul li:nth-child(4){margin-right: 0px;}
+#contents .mainul li:nth-child(8){margin-right: 0px;}
+#contents .mainul li:nth-child(12){margin-right: 0px;}
+#contents .mainul li:nth-child(16){margin-right: 0px;}
+#contents .mainul li img{height: 450px; width: 330px; box-shadow: 3px 3px 15px 3px rgba(0,0,0,.1);}
+#contents .mainul li strong{display: block;width: 330px;font-size: 24px;font-family: 'Nanum Gothic', sans-serif; letter-spacing:-1.5px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; margin-top: 12px; }
+#contents .mainul li span{float: left; display: block; font-size: 16px; margin-top: 5px; color: #7a7777;text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+#contents .mainul li:hover{transform: translate(0,-20px)}
+
+/* contents > 페이지슬롯 */
+#pageslot .inner a{font-size: 15px; color: #454545}
+#pageslot .inner ul{justify-content: center; align-items: center; display: flex; margin-bottom: -50px;}
+#pageslot .inner ul li{display: inline-block; background: white; min-width: 16px; height: 27px;padding: 0 2px; border: 1px solid  #d2d2d2; border-radius: 3px; line-height: 27px; vertical-align: middle; font-size: 14px; color: #454545; margin-bottom: 100px; margin-top: 50px; text-align: center; margin-right: 3px;}
+#pageslot .inner .slot{background: #f0f0f0}
+
+
+/* 유튜브 박스 */
+#youtubeBox{background: #ffffff; height: 710px;}
+#youtubeBox>.inner>h4{margin: 20px 0;}
+#youtubeBox>.inner>h4>#goYoutube{margin-left: 22px; height: 32px; display: block; padding: 0 35px; border-radius: 20px; color: #fff; background: #e72410; font-size: 20px; border: 2px solid #e72410; transition: all .2s;}
+#youtubeBox>.inner>h4>#goYoutube:hover{background: #fff; color: #e72410;}
+
+#youtubeBox>.inner .box{float: left ;width: 50%; height: 100% ; padding: 20px; box-sizing: border-box; font-size: 24px; letter-spacing:-.5px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; margin-top: 12px; font-weight: bold; }
+
+#youtubeBox>.inner .box iframe{width: 697px; height: 392px; display: block; margin-bottom: 20px;}
+
